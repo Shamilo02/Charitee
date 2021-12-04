@@ -907,6 +907,32 @@ footer .container .box ul li a {
   text-decoration: none;
 }
 
+footer .container .box i {
+  background-color: #4267B2;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .container .box i:nth-child(2) {
+  background-color: #0077b5;
+}
+
+footer .container .box i:nth-child(3) {
+  background-color: crimson;
+}
+
+footer .container .box i:nth-child(4) {
+  background-color: #833AB4;
+}
+
+footer .container .box button {
+  padding: 15px 40px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+}
+
 @media (max-width: 992px) {
   footer .container {
     -ms-flex-wrap: wrap;
