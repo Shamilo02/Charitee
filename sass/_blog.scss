@@ -1,0 +1,123 @@
+section.blog{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+
+    .container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .yazi{
+           
+            *{
+                margin-bottom: 30px;
+            }
+            
+            span{
+                color: #30336b;
+                font-weight: 500;
+            }
+            
+            h2{
+                color: #130f40;
+            }
+            
+            .flex{
+               
+                display: flex;
+                justify-content: space-between;
+                i{
+                    border: 1px solid #ddd;
+                    padding: 20px;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+
+        .box    {
+            width: 37%;
+    
+
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            
+            .card-yazi{
+                background-color: #dfe6e9;
+                padding: 20px;
+                *{
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    color: gray;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: crimson;
+                    position: relative;
+                    font-weight: 500;
+                    transition: 0.5s ease;
+                    &:hover{
+                        letter-spacing: 1px;
+                    }
+                    
+
+                    &::after{
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: crimson;
+                        transform: translateY(25px  );
+                    }
+                }
+
+            }
+            }
+    }
+}
+
+@media (max-width: 992px){
+    section.blog{
+        .container{
+            flex-wrap: wrap;
+
+            .yazi{
+                width: 100%;
+            }
+
+            .box{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    section.blog{
+        .container{
+            flex-direction: column;
+            .yazi{
+                .flex{
+                    display: none;
+                }
+            }
+            .box{
+                width: 100%;
+                &:nth-last-child(1){
+                    display: none;
+                }
+            }
+        }
+    }
+}

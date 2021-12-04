@@ -1,0 +1,155 @@
+header{
+    width: 100%;
+    height: 120vh;
+    background-image: url('https://preview.colorlib.com/theme/charitee/assets/img/hero/xh1_hero1.jpg.pagespeed.ic.bV8JD2xijB.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+    overflow: hidden;
+
+  nav {
+      width: 95%;
+      height: 100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .respo{
+          display: none;
+      }
+
+      button.btn-crime{
+          padding: 20px 50px;
+          background-color: crimson;
+          color: #fff;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+      }
+
+    .menu{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      
+        ul{
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: 0.5s ease;
+                    &:hover{
+                        color: cyan;
+                    }
+                }
+            }
+
+        }
+    }
+
+  
+  }
+
+  .text{
+      color: #fff;
+      width: 40%;
+      padding-top: 10%;
+      padding-left: 5%;
+
+      h1{
+          font-size: 3em;
+            animation-name: bir;
+            animation-duration: 3s;
+            position: relative;
+
+            @keyframes bir {
+                from{ top: 500px; opacity: 0; }
+                to{ top: 0; opacity: 1;}
+                
+            }
+      }
+
+      p{
+        animation-name: bir;
+        animation-duration: 5s;
+        position: relative;
+
+        @keyframes bir {
+            from{ top: 500px; opacity: 0; }
+            to{ top: 0; opacity: 1;}
+            
+        }
+      }
+
+      *{
+          margin-bottom: 15px;
+      }
+
+      .cyan{
+          padding: 20px 30px;
+          background-color: lightseagreen;
+          color: #fff;
+          border: none;
+          animation-name: uc;
+          animation-duration: 7s;
+          position: relative;
+          border: 2px solid lightseagreen;
+          transition: 0.5s ease;
+          cursor: pointer;
+          &:hover{
+              background-color: transparent;
+          }
+        @keyframes uc {
+                from{top: 500px; opacity: 0;}
+                to{ top: 0; opacity: 1;}
+        }
+      }
+  }
+}
+
+@media only screen and (max-width:992px) {
+    
+    header{
+        nav {
+            .menu{
+                ul{
+                    display: none;
+                }
+            }
+
+            .btn-crime{
+                display: none;
+            }
+
+            .respo{
+                display: block;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+        .text{
+           h1{
+               font-size: 2em;
+           }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    header{
+        .text{
+            width: 80%;
+            padding-top: 30%;
+        }
+    }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"  >
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+           <div class="menu">
+                <div class="logo">
+                    <img src="data:image/webp;base64,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" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">Who We are ? </a></li>
+                    <li><a href="#">Programs </a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Blog </a></li>
+                    <li><a href="#">Contact Us </a></li>
+                </ul>
+           </div>
+
+            <button class="btn-crime"><i class="fas fa-heart"></i> Make a Donation</button>
+            <div class="respo">
+                <i class="fas fa-align-justify"></i>
+            </div>
+        </nav>
+
+        <div class="text">
+            <h1> Give a helping hand to those who need it!</h1>
+            <p>When a child gets access to good food, it can change just about everything.</p>
+            <button class="cyan">Ongoing Programs</button>
+        </div>
+    </header>
+
+    <section class="upcoming">
+
+        <div class="container">
+            <div class="resim">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xabout1.jpg.pagespeed.ic.bN1am1b_q1.webp" alt="">
+            </div>
+
+            <div class="yazi">
+                <span>Upcoming Program</span>
+                <h2> Donate vitamin B12 supply program</h2>
+                <p>
+                    When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor
+                     incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+                <button class="donate">Donate Now</button> 
+                <button class="view"> View Peograms</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="about">
+        <div class="container">
+            <div class="yazi">
+                <span>Upcoming Program</span>
+                <h2> Donate vitamin B12 supply program</h2>
+                <p>
+                    When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor
+                     incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+                <button class="donate">Disover More</button> 
+            </div>
+
+            <div class="resim">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xabout2.png.pagespeed.ic.F46wcyErVA.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="container">
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xclass-img1.jpg.pagespeed.ic.4wT5uUw7Uv.webp" alt="">
+                <div class="card-yazi">
+                    <h3>Help the ecosystems</h3>
+                    <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar 
+                        ante start in life and the opportunity to learn.</p>
+                        <div class="amount">
+                            <div class="unt">
+                                <span>$67,845</span>
+                                <p>Goal</p>
+                            </div>
+                            <div class="unt">
+                                <span>$67,845</span>
+                                <p>Goal</p>
+                            </div>
+                            <div class="btn">
+                             <button>Donate</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xclass-img1.jpg.pagespeed.ic.4wT5uUw7Uv.webp" alt="">
+                <div class="card-yazi">
+                    <h3>Help the ecosystems</h3>
+                    <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar 
+                        ante start in life and the opportunity to learn.</p>
+                        <div class="amount">
+                            <div class="unt">
+                                <span>$67,845</span>
+                                <p>Goal</p>
+                            </div>
+                            <div class="unt">
+                                <span>$67,845</span>
+                                <p>Goal</p>
+                            </div>
+                            <div class="btn">
+                             <button>Donate</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xclass-img1.jpg.pagespeed.ic.4wT5uUw7Uv.webp" alt="">
+                <div class="card-yazi">
+                    <h3>Help the ecosystems</h3>
+                    <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar 
+                        ante start in life and the opportunity to learn.</p>
+                        <div class="amount">
+                            <div class="unt">
+                                <span>$67,845</span>
+                                <p>Goal</p>
+                            </div>
+                            <div class="unt">
+                                <span>$67,845</span>
+                                <p>Goal</p>
+                            </div>
+                            <div class="btn">
+                             <button>Donate</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="helping">
+        <div class="container">
+            <div class="resim">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xabout3.jpg.pagespeed.ic.X2sAxEDgvH.webp" alt="">
+            </div>
+
+            <div class="yazi">
+                <span>Upcoming Program</span>
+                <h2> Donate vitamin B12 supply program</h2>
+                <p>
+                    When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor
+                     incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+                <button class="donate">Disover More</button> 
+            </div>
+        </div>
+    </section>
+
+    <section class="how">
+        <div class="text">
+            <span>Helping Today            </span>
+            <h2>How we help people</h2>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/icon/services1.svg" alt="">
+                <h4>Pure Food & Water</h4>
+                <p>
+                    Odio aliquet, fringilla odio eget, tincidunt
+nunc duis aliquet pulvinar ante employees and organizations to support.
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/icon/services1.svg" alt="">
+                <h4>Pure Food & Water</h4>
+                <p>
+                    Odio aliquet, fringilla odio eget, tincidunt
+nunc duis aliquet pulvinar ante employees and organizations to support.
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/icon/services1.svg" alt="">
+                <h4>Pure Food & Water</h4>
+                <p>
+                    Odio aliquet, fringilla odio eget, tincidunt
+nunc duis aliquet pulvinar ante employees and organizations to support.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+
+        <div class="container">
+            <div class="yazi">
+                <span>News</span>
+                <h2>Latest Blog</h2>
+                <div class="flex">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xclass-img1.jpg.pagespeed.ic.4wT5uUw7Uv.webp" alt="">
+                <div class="card-yazi">
+                    <h3>Help the ecosystems</h3>
+                    <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar 
+                        ante start in life and the opportunity to learn.</p>
+                    
+                        <a href="#">Read More</a>
+                    </div>
+            </div>
+
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/gallery/xclass-img1.jpg.pagespeed.ic.4wT5uUw7Uv.webp" alt="">
+                <div class="card-yazi">
+                    <h3>Help the ecosystems</h3>
+                    <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar 
+                        ante start in life and the opportunity to learn.</p>
+                        <a href="#">Read More</a>
+                       
+                    </div>
+            </div>
+        </div>
+    </section>
+
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194472.6747724614!2d49.71487350592399!3d40.394769470888555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2zQmFrxLEsIEF6yZlyYmF5Y2Fu!5e0!3m2!1saz!2s!4v1638546217205!5m2!1saz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>    
+
+<footer>
+    <div class="container">
+        <div class="box">
+            <img src="data:image/webp;base64,UklGRooJAABXRUJQVlA4TH4JAAAvycALEPUKgrZt4/CHve2nEBETABVl9vgBx7XtNs42rffHYf/LED4/vyiP2LLXMhwqlc4uBcSKnQAtYULl2H0GbRtJ4g9g4tl7qSJq20b8Wd7r4g4FgwBgwVQQQQQNaEADazANtgY02BqIMA1o4A3+BnfgSJLTMDvg7A1ws8sT/E3b9q5ttm3f/1OvZ+F3IEPO/7cknAnB50ma3EgjPbiXIc0VndG4EBesmVOnVps0ebB1SrESXKI0TYQEAADIttn92bZt27Zt27Zt27Zt29462/biwG0kRVIdY7q3t+kJKQiwgPIDSZHAZmZTNBgL28wiYTf/c5NZHGwARNNrFgO7+Hmiok32yn4bP5r/3eISYfhPw9j399+YYBrEZgEX58o/VW/l37sFFgLoozLNFPMAEt0kYMAWAFgQOhIWeQTwEP/TNOHBi5wj1Kw8HwKL3mkQUMEVz0/RqAvDJoBccTkEO00TM8ruM/dKUbXPYFHNMzcAyhsmdWjg4UhOgOFpgFaaJci4V+aaEki4fngKQZrOoPUZSm61y8GI19FXdTzAjpzCEL5XMU6zhF5bnnB/pl7RPjVJmiurKCaZTuAs4hCjDAZINnZRTbN0WukuQEDSwITvsM8+SaZqMjuly/ycqVxAl4TffEpQiQfZXTlEPHBMWqin8XoKWQIhYR2lEXMs8aOTCWIooYGVz8FsFPKAtnmSkEdR7QAEfKZc0w9+kkDbk/USEM22iU++6/aQT8NFOCCOOzxyN7COsGrgVUhSfhcBw+oM2wqIjEoYt10u8OzTYRKCHL2XRgv4r+azOp+d9Vutz0FuEDMNk5LkEbMQ74ZlHVSumetp4KqBCcgZUUlaspCG6s7+JKAhjwaxVHV0PORjjfr7a2SiDV8A51+DsJ0++8BEiqJK9lnrMk1j2xRWGC62lclCp7Yh+8Amxz8XqzRSpA2kroKwrPTyN43W5Kl21hEMtcvPcua4mtcg7usQ/ioReYp/EiSGH0GRRopeF1GrJbg79gRizarEfadUZrb+7Ehql4FkB8DFKsSKDgrdGdBsO4U++SevklzkBCV7LLAATRGsJWBAuapPxa89gC477Cz90fLleYSsrYLPlAG4A3eFAa1FfaVAhCWXXXyTvS3Z+7nAAuH+KTR1c8oCLAGfwQpRR59LHeFF/NF6XTAsKLF0HbaU3MWr7evjTlQNsAMsOIl/gi0DmTzqgAxnAFJdhTir3BTyPDi77rzOH/J5d/lugRKds3oZqDI3upzjnQUL/a6LMJZBCKSUh7EyVwKBCYf9bd0qdbZMidchhQBRkWtmj2WSo8pXNdIQO6unC0QYtWUCn56yhUsBBVdOnQx7CBSxobhsLwvWIV0vc9Ay1rPK9N4qyA0udT5wgGQBjaZjh3MO00XRMMX/EaVzDAsxp/MXC0gM6rBtm7VXCyTkDOQA1bdkFMgSN616KAvWH7bfL1EADkjHL2G26isgVhPZjm6jyaziXoxgUZhhSMNa4bJsgciJBaQZi56yDeC4QPFN+R6noer1t0rFB0/tQf2Aa9kvoZB1VGlc8GSN+Fn5PFOguMGx8kBo/mchbeE/k8vrwEDb92h1li3j50leKz35yk7vsclR/ncRYIZrgeLdy8wUbPhXx/5lJjEk95f7VZKVqVM48otOC6UJqr6rDvDGBAva6b23gJRKKoAUlCykSPtIZLMv+yBUfp8dvcTPUOkAnyobBjBL1VY14eX6I/Tn/g+FGm2VojZAVAFgm/OilLxK7FjblWoMOOtKeY6NlMMPqnhIjWScD3uqlfg9yCpphb2B66VO9dh1uWP2GIJDByRUDjsZW24jnPdOCOheJS7Jm7/gfqv8bQ0++Xn/pBzvVpSuLET3OfU7JZu3wUQ3wKtlgZMzz0L+V8Of6BzSWpIzTLdchRnGRbXaRv176tlfKj7j3tm9wmtkTt2A4vkNR5Xrx2+zbxtXbPry8Mo3lRT9RAbjVLtcD3UYmEJr59QpgAvYcizhz+K4yxQXOnNyhL2Ch/f7JojJGfb1YYXk1488i35yd6ZMVcJyp9RjwdlyUDjxSBzYJnukw7cOJMkpjFke6/pm285KTQYFDZMXznZfLI53rv7KKE9jwac7TUcjIXVRwL4+dog9erypE9iQmrRntTi4tOfIJcmGrSMlt3yZhDrlcl+SBGuudbfqNTDX7YNeHB/lxfkaZEn4jwH5OzrXLWULv6+THMHn9MDuc3sL1wqNXfekH7jvKBV1hmw6rnecvAfGqxtq55d863olMlfdSZJLXdcrlqLQ88Tt5ADfnvg8SYI3J/Ou9FRNIHTXE7DWnvWUbKt6Auearmx7oKsMDlU7V54mj3Bf1eE1tOoM3MLmnZgq3Dk4wp2LJYqvSeRQB7yjljCg7hzM0pqvQF1bednv/JlkgyPt1/oFhpa7KCdBqO8E+iSQkzVw2cG0WqQGPVtIJwm22wMXtUUbigkCVPPJhlsTzGFHZO4JNqf/D2hEsP7mrtxThcNCNwdAAMmg6uy6LZVYJ9rbcl1ZR/3868rWQFv4V1dSbyUvrbiZJHlt5BaeoOBCE8d+1Jq8VxmgtmrC/NGuy/cCwTWOlMuenQO1cXKBvcsTe48TxDuc6CpGJ6SXSorJ+bany5uzJBnJ2UOabtC81dbL5IJXOtoehh3v3toS0JVn7yLz+2ZfHfNG/FKS4DtwlbgkKHDqW0lgpt+JMreibocep7SQ+gFh33Y5wK4WnSXHnd+5UBeR2HQd+QP34LnzJSdOl4ZKNkxv7igvz58Mfarq5WrPhfRZVd3q3vyzzpwaAkom1KoDzj9SdYf02kK2tKwPKv35U5T/oHDbHeBYU128DngOnFBPqD9Vu8S5qjIGSv6z42VArdbIndvAB62Jw+Girt5PAkZf1dnDUluiquvHUxQYQVhhnPgEQFUdn9ms9sra4n9NYV51a67dNaBygGFWRpdx42eSJWZ27bNDPikF8v19bU8/OZAE35Hq8CgGNUVtV9/f/ry2gweVvgdHPvtxVjT4D2roenz+1Q/q7GzqZUL2FIA7di/98sMG+FUSGt2Fr5YAw9bobOcdJGrLwvHqIuPqTxBDWSb/EXO80K3s0BBZYfo32pCvtLbvHKFzxt87aagoWvfN9Ku/I1NvRwEjB4UxD5I1SGHLnqohs2hTL4I0A16Lc2VHOtUQx97b+cfVWfPZdcmpmeGzu21IDY6z+OiUGh7MnMmn8XHmLcQpxQBn3kLEAaVtKRZ4XFKzIwE=" alt="">
+            <p>
+                When a child gets access to good food, 
+                it can change just about everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
+            </p>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Contact Us </h2>
+            <ul>
+                <li><a href="#">4486 Richards Avenue, Modesto CA - 95354</a></li>
+                <li><a href="#">209-818-6041</a></li>
+                <li><a href="#">charity90@gmail.com</a></li>
+                
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Support</h2>
+            <p>
+                When a child gets access to good food, it can change.
+            </p>
+            <button>
+                Join Us today
+            </button>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+section.helping{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+
+    .container  {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .resim{
+            width: 40%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .yazi{
+            width: 50%;
+
+
+           
+                span {
+                  display: inline-block;
+                  color: #65c9bb;
+                  font-size: 16px;
+                  font-weight: 400;
+                  margin-bottom: 10px;
+                  text-transform: capitalize;
+                  margin-bottom: 10px;
+                }
+          
+                h2 {
+                  color: #263b5c;
+                  font-size: 38px;
+                  display: block;
+                  font-weight: 500;
+                  line-height: 1.2;
+                  margin-bottom: 30px;
+                }
+          
+                p {
+                  color: #777;
+                  font-size: 15px;
+                  font-weight: 500;
+                  line-height: 1.5;
+                  margin-bottom: 50px;
+                }
+          
+                .donate{
+                  background-color: #f15b43;
+                  color: #fff;
+                  padding: 17px 35px;
+                  font-size: 18px;
+                  border-radius: 0;
+                  font-weight: 500;
+                  text-transform: capitalize;
+                  border: 2px solid transparent;
+                  display: inline-block;
+                  cursor: pointer;
+                  transition: 0.5s ease;
+                  &:hover{
+                      background-color: white;
+                      border: 2px solid #f15b43;
+                      color: #f15b43;
+                  }
+                }
+    }
+}
+}
+
+@media (max-width:992px) {
+    
+    section.helping{
+        .container{
+         flex-direction: column;
+         *{
+             margin: auto;
+             margin-bottom: 30px;
+         }
+         .yazi{
+             width: 100%;
+             margin-bottom: 0;
+         }
+         .resim{
+             width: 90%;
+         }
+        }
+    }
+}
